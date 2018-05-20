@@ -1,0 +1,63 @@
+
+/*3. 轮播图*/
+.main-div {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+.slide-div {
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+.slide-image {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.slide-button {
+    right: 0;
+    height: 50px;
+    width: 30px;
+    color: #fff;
+    background: black;
+    opacity: 0.3;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+.slide-button.left {
+    left: 0;
+}
+.slide-button.right {
+    right: 0;
+}
+/* 用来垂直居中一个元素的套路 CSS */
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slide-indicators {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.slide-indi {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+}
+.white {
+    background: white;
+}
+.slide-button:hover {
+    opacity: 0.5;
+}
